@@ -3,8 +3,7 @@ import { Rect } from "./rect.js";
 
 class App {
   constructor() {
-    this.canvas = document.createElement("canvas");
-    document.body.appendChild(this.canvas);
+    this.canvas = document.querySelector('#c');
     this.ctx = this.canvas.getContext("2d");
 
     this.pixelRatio = window.devicePixelRatio > 1 ? 2 : 1;
